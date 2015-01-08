@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>AvParts</title>
+	<!-- http://getbootstrap.com/customize/?id=5d67c4d5e7372abcd76d -->
+    <link href="css/bootstrap.min.css?" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+	<style>
+	</style> 
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class='bodyBG' >
+  <div class='fon'>
+    <div class="navbar navbar-inverse navbar-fixed-top projectTopBar" role="navigation">
+      <div class="container">
+		  <div class='rfd' onClick='App.rfqForm();' >RFQ<div class='counter' style='display:none;'></div></div>
+        <div class="">
+          <div class=" title" href="#">AvParts</div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden navbar navbar-inverse navbar-fixed-bottom projectBottomBar" role="navigation" data-role="footer">
+      <div class="container avFooter">
+        <div class="">
+          <a class="pNav col-xs-3" href="#" onClick='App.profile();return false;' ><img src='img/altbar/profile.png' class="altbar-profile" /><br/>Profile</a>
+          <a class="pNav col-xs-3" href="#" onClick='App.messages();return false;' ><img src='img/altbar/messages.png' class="altbar-profile" /><br/>Messages</a>
+          <a class="pNav col-xs-3" href="#" onClick='App.onLogin();return false;' ><img src='img/altbar/search.png' class="altbar-profile" /><br/>Search</a>
+          <a class="pNav col-xs-3" href="#" onClick='App.contact();return false;' ><img src='img/altbar/contact.png' class="altbar-profile" /><br/>Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container userInfo">
+    <div style='text-align:center' class='onlyLogin'>
+    <img class='avLogoBig' src='img/buyuk_logo.png'>
+    </div>
+    <div class='col-xs-7' style='padding-left:0px;'>
+    <img class='avLogoBlue' src='img/blue_son.png'>
+    <img class='avLogoWhite' src='img/white_son.png'></div><div class='userInfoUserName col-xs-5'  style='padding-right:0px;'></div>
+    </div>
+    <div class="container avMainPart">
+      <div class="starter-template">
+	<div  class='avLogo'></div>
+        <h1>Possibly an error occured</h1>
+        <p class="lead">Error in document</p>
+      </div>
+
+    </div><!-- /.container -->
+<div class='hidden templates'>
+	<div class='oneSearchResult' id='dbStock{i}'>
+		<div class='addDrop glyphicon glyphicon-plus-sign'></div>
+		<div class='line' >
+			<b>Part Number </b><span class='part'>{part}</span><br />
+			<b>TR</b><div class='TRStock {istCls}'></div><br />
+			<b>USA</b><div class='USAStock {usaCls}'></div><br />
+		</div>
+	</div>
+	<div class='oneMessage' id='dbMessage{i}'>
+		<div class='line' >
+			<div class='ctime'><strong>{ctimeM}</strong>{ctimeD}</div>
+			<b class='messageHeader'>{header}</b><span class='body'>{body}</span>
+			<br />
+		</div>
+	</div>
+	<div class='oneRFQPart col-xs-12 col-md-6'>
+	  <label><input type='checkbox' checked='checked' name='part[]' value='{part}' class='oneRFQPartPart'> {part}</label><input type='tel' class='selectEveryThing' name='count[]' value='' style='text-align:right;float:right;padding-right:4px;    width: 50px;' />
+	</div>
+</div>
+</div>
+
+	<img src='img/alt/messages.png'  class='altImage' id='altImage' />
+<div class="modal fade" id='disclaims'>
+  <div class="modal-dialog" style='width:90%'>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Disclaimer</h4>
+      </div>
+      <div class="modal-body">
+        <p>Avparts International is not responsible for, and expressly disclaims all liability for, damages of any kind arising out of use, reference to, or reliance on any information contained within this application.While the information contained within this application is periodically updated, no guarantee is given that the information provided in this application is correct, complete, and up-to-date.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">I Agree</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id='Alert'>
+  <div class="modal-dialog" style='width:90%'>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Disclaimer</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id='TermsOfUse'>
+  <div class="modal-dialog" style='width:90%'>
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Terms of Use </h4>
+      </div>
+      <div class="modal-body">
+        <p style='font-size:small;'>
+		<h3 style='text-align:center'>Avparts International<br />
+Mobile Application<br />
+Terms of Use Agreement</h3>
+
+Effective Date: 14 August 2014<br />
+PLEASE READ THIS TERMS OF USE AGREEMENT CAREFULLY BEFORE
+DOWNLOADING THE AVPARTS APPLICATION. <br/><br/> By downloading, accessing and/or using
+this mobile application (the “Application) owned by Avparts International LLC. (“Avparts”) you
+signify that you have read, understand and agree to be bound by all of the terms and conditions
+as set forth in this Terms of Use Agreement (“Agreement”). Avparts’s Disclaimer and Mobile
+Application Privacy Policy are subject to and incorporated by reference into this Agreement
+(collectively, the “Mobile Application Documentation”). Avparts may change the terms of the
+Agreement at any time and without notice, effective upon the posting of the revised Agreement.
+Your continued use of the Application shall be considered your acceptance of the revised
+Agreement. You must have the most current version of the Application to ensure that it is
+working properly. It is your responsibility to periodically check the Application and/or our
+website at www.avpartsinternational.com , to determine if you have the most current version of
+the Application. If you do not agree to this Agreement, please do not download the Application.
+<br /><br />
+<b>No Warranties</b><br />
+The Application is provided subject to all of the terms set forth in the Mobile Application
+Documentation. Avparts does not warrant that: (i) its Application will be constantly available, or
+available at all; (ii) that the information in this Application is complete, true, accurate, or (iii) your
+opt-out choices will be successfully executed in all cases. Avparts does not warrant that the
+Application is free of defects or errors.<br /><br />
+<b>Limitations of Liability and Indemnification</b><br />
+THE DOWNLOADING AND/OR USE OF THE APPLICATION IS ENTIRELY AT
+YOUR OWN RISK AND IN NO EVENT SHALL AVPARTS BE LIABLE (WHETHER
+UNDER THE LAW OF CONTRACTS, TORTS OR OTHERWISE) FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, PUNITIVE OR
+ANY OTHER MONETARY OR OTHER DAMAGES, FEES, FINES, PENALTIES OR
+LIABILITIES (COLLECTIVELY “DAMAGES”) WHATSOEVER ARISING OUT OF OR
+RELATING TO THIS APPLICATION. YOUR SOLE AND EXCLUSIVE REMEDY FOR
+DISSATISFACTION WITH THE APPLICATION IS TO STOP USING THE
+APPLICATION. YOU AGREE TO DEFEND, INDEMNIFY AND HOLD AVPARTS, AND
+ITS OFFICERS, DIRECTORS, EMPLOYEES, REPRESENTATIVES AND AGENTS
+HARMLESS FROM AND AGAINST ANY CLAIMS, ACTIONS, DEMANDS,
+LIABILITIES, JUDGMENTS, AND SETTLEMENTS, INCLUDING WITHOUT
+LIMITATION, REASONABLE LEGAL FEES RESULTING FROM OR ALLEGED TO
+RESULT FROM YOUR USE OF THIS APPLICATION.<br /><br />
+
+<b>Unenforceable Provisions</b><br />
+If any provision of this Agreement is, or is found to be, unenforceable under applicable law, that
+will not affect the enforceability of the other provisions of this Agreement.
+<br /><br />
+<b>Ownership of Intellectual Property and Limited License</b><br />
+All intellectual property to this Application, including all Application material, is protected by
+copyright, trademark, or patent laws, and is owned exclusively by Avparts International LLC.
+Intellectual property, includes, but is not limited to, computer or software code, scripts, design
+elements, graphics, interactive features, artwork, text communication, and any other content that
+may be found on or in the Application. All trademarks, service marks and trade names are
+owned, registered and/or licensed by Avparts. Avparts grants to you a worldwide, non-exclusive,
+royalty-free, revocable license to: download this Application to a mobile devise via a web browser;
+use this Application as herein set forth; copy and store this Application and the material on this
+Application in your web browser cache memory; and print pages from this Application for your
+own personal and non-commercial use. Avparts does not grant you any other rights whatsoever
+in relation to this Application or the material on this Application. All other rights are expressly
+reserved by Avparts International.<br /><br />
+<b>Use and Prohibited Use Restrictions</b><br />
+You may use the Application only for your own personal, non-commercial use. You are strictly
+prohibited from, and agree that you will not, adapt, edit, change, modify, transform, publish,
+republish, distribute, or redistribute this Application or the material on this Application (in any
+form or media) without Avparts's prior written consent. You agree not to use any automated data
+collection methods, data mining, robots, or scraping or any data gathering methods of any kind
+on this Application.<br /><br />
+<b>Enforcement of Copyright and Protection of Intellectual Property</b><br />
+If Avparts discovers that you have used its copyrighted or other protected materials in
+contravention of the terms of the license above, Avparts may bring legal proceedings against you,
+seeking monetary damages and an injunction against you. You could also be ordered to pay legal
+fees and costs. If you become aware of any use of Avparts's copyright or protected materials that
+contravenes or may contravene the terms of the license above, immediately report this by email
+to info@avpartsinternational.com or by first-class mail or fax to Avparts International LLC.
+16711 Park Centre Blvd.Miami Gardens, Florida 33169 U.S.A Phone: <a  style='color:#333' href="tel:+1(305) 907-5600">+1(305) 907-5600</a> Fax: <a  style='color:#333' href="tel:
++1(305)907-5601">
++1(305)907-5601</a><br /><br />
+<b>Governing Law and Dispute Resolution</b><br />
+This Agreement shall be governed by and shall be construed in accordance with the laws of the
+State of Florida, excluding its choice of law rules. All disputes relating to this Agreement shall be
+settled in the courts located within the county of United States, in Florida. The parties submit to
+personal jurisdiction within the State of Florida.<br /><br />
+<b>Contact Information</b><br />
+Avparts may be contacted by mail at Avparts International LLC. 16711 Park Centre Blvd.Miami
+Gardens, Florida 33169 U.S.A or by email at info@avpartsinternational.com .Our phone
+number is <a  style='color:#333' href="tel:+1(305) 907-5600">+1(305) 907-5600</a> Fax: <a  style='color:#333' href="tel:
++1(305)907-5601">
++1(305)907-5601</a>
+		</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">I Agree</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+    if(typeof(cordova)!='undefined')
+	  cordova.plugins.Keyboard.disableScroll();
+    var login 	= localStorage.login;
+    var dbCart 	= localStorage.dbCart?JSON.parse(localStorage.dbCart):[];
+    var dbStock = localStorage.dbStock?JSON.parse(localStorage.dbStock):[];
+    var user	=  localStorage.user?JSON.parse(localStorage.user):[];
+    var messages =  localStorage.messages?JSON.parse(localStorage.messages):[];
+    var recentSearches = localStorage.recentSearches?JSON.parse(localStorage.recentSearches):[]
+	App.init();
+
+    </script>
+  </body>
+</html>

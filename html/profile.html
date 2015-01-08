@@ -1,0 +1,36 @@
+<div class='pageProfile'>
+<form role="form" class='loginFormForm' onSubmit='App.profileSubmit(this);' >
+<input id='id' name='id' value='' type='hidden' />
+<h2 class='avLoginError'></h2>
+  <div class="projectForm">
+    <div class="line">
+	  <div class="sprite"><span class="username"></span></div>
+	  <input type="username" class="" id="username" name='username' placeholder="Your username" required="required" />
+	</div>
+    <div class="line">
+	  <div class="sprite"><span class="email"></span></div>
+	  <input type="email" class="" id="email" name='email' placeholder="Enter email" required="required" />
+	</div>
+	<div class="line">
+	  <div class="sprite"><span class="password"></span></div>
+	  <input type="password" class="" id="password" name='password' placeholder="Password" required="required" />
+  </div>
+	<div class="line">
+	  <div class="sprite"><span class="phone"></span></div>
+	  <input type="tel" class="" id="phone" name='phone' placeholder="Phone" required="required" />
+  </div>
+	<div class="line">
+	  <div class="sprite"><span class="company"></span></div>
+	  <input type="company" class="" id="company" name='company' placeholder="Company" required="required" />
+  </div>
+  </div>
+  <a href='#'  class='button btn  btn-default logout'  style="float: left; Margin:10px;">Logout</a>
+  <a href='#' onClick='App.profileSubmit(this.parentNode);return false' class='button btn  btn-default'  style="float: right; Margin:10px;">Update</a>
+  
+  <br />
+  <br />
+  <br />
+  <br />
+</form>
+
+</div>

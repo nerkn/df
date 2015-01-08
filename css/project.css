@@ -1,0 +1,405 @@
+
+*:not(input,textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+}
+
+.projectTopBar, .projectBottomBar{
+background: rgb(75,112,156); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(75,112,156,1) 0%, rgba(19,40,69,1) 93%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(75,112,156,1)), color-stop(93%,rgba(19,40,69,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(75,112,156,1) 0%,rgba(19,40,69,1) 93%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(75,112,156,1) 0%,rgba(19,40,69,1) 93%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(75,112,156,1) 0%,rgba(19,40,69,1) 93%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(75,112,156,1) 0%,rgba(19,40,69,1) 93%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b709c', endColorstr='#132845',GradientType=0 ); /* IE6-9 */
+}
+.projectTopBar{
+}
+.iPhone{
+}
+.iPhone .projectTopBar{
+}
+.projectBottomBar{
+    background: url("../img/nav_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.backbutton {
+  margin-left: 13px;
+    margin-top: 10px;
+    position: absolute;
+}
+.backbutton img{
+      width: 50px;
+}
+html, body {
+height: 100%;
+}
+body {
+    color: #047;
+    font-size:13px;
+}
+body .fon{
+  padding: 70px 0 100px 0;
+}
+.fon {
+min-height: 100%;
+margin: 0 auto;
+}
+.bodyBG{
+    background: url("../img/bg2.jpg") no-repeat fixed 50% 50% rgba(0, 0, 0, 0);
+	background: url("../img/bg3.jpg") repeat fixed 50% 50%;
+    color: #fff;
+
+}
+.bodyBG .fon{
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(43,74,116,0.7) 0%, rgba(4,11,21,0.7) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(43,74,116,0.7)), color-stop(100%,rgba(4,11,21,0.7))); /* Chrome,Safari4+ */
+
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(43,74,116,0.7) 0%,rgba(4,11,21,0.7) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-radial-gradient(center, ellipse cover,  rgba(43,74,116,0.7) 0%,rgba(4,11,21,0.7) 100%); /* Opera 12+ */
+
+background: -ms-radial-gradient(center, ellipse cover,  rgba(43,74,116,0.7) 0%,rgba(4,11,21,0.7) 100%); /* IE10+ */
+
+background: radial-gradient(ellipse at center,  rgba(43,74,116,0.7) 0%,rgba(4,11,21,0.7) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b32b4a74', endColorstr='#b3040b15',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.hide{display:none;}
+
+
+.pNav {    float: left;
+    font-size: 13px;
+    height: 50px;
+    line-height: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {  color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.container.userInfo {
+    margin-bottom: 10px;
+}
+.avLogo{
+  background: url("../img/logo.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+  
+  min-height: 30px;
+  min-width: 150px;
+  display:none;
+}
+
+.bodyBG .avLogo{
+  background: url("../img/logo2.png") no-repeat scroll left center rgba(0, 0, 0, 0);}
+  
+.bodyBG .avLogoBlue {display:block;float:left;width:103px;}
+ .avLogoBlue {display:none;float:left;}
+.bodyBG .avLogoWhite{display:none;float:left;}
+.avLogoWhite{display:block;float:left;width:103px;}
+.avLogoBig{display:none;width:183px;}
+.onlyLogin{display:none;}
+.loginScreen .onlyLogin {display:block;}
+.loginScreen .avLogoBig {display:inline;}
+.loginScreen .avLogoBlue, .loginScreen .avLogoWhite{
+  display:none;
+}
+.avLogoBig{    margin-top: 10px;
+    text-align: center;}
+
+.oneSearchResult{
+  background:#214173;
+  margin :4px;
+  padding:4px;
+  color:#fff;
+  border-radius:3px;
+}
+.oneSearchResult .imgCap{
+    box-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    display: inline-block;
+    height: 60px;
+    margin: 5px 0 0 10px;
+    width: 60px;
+  }
+  .oneSearchResult .line{    display: inline-block;    vertical-align: top;}
+  .oneSearchResult .line b{    display: inline-block;    width: 90px;}
+  .oneSearchResult .addDrop{
+    float: right;
+    height: 20px;
+    padding: 20px;
+    width: 20px;	}
+.TRStock, .USAStock{
+	background: none repeat scroll 0 0 #00CC00;
+    border: 3px solid #009900;
+    border-radius: 10px;
+    box-shadow: 1px 1px #000000;
+    display: inline-block;
+    height: 10px;
+    margin: 4px 3px 0;
+    width: 10px;
+}
+.searchResults{
+  min-height:300px;
+}
+.TRStock.will, .USAStock.will{
+	background: none repeat scroll 0 0 #CC0;
+    border: 3px solid #990;
+}
+
+.TRStock.stockOut, .USAStock.stockOut{
+	background: none repeat scroll 0 0 #C00;
+    border: 3px solid #900;
+}
+  .productSearch{
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 2px solid #004477;
+    padding: 15px 10px;
+  }
+  .productSearchPartNumber {
+    color: #004477;
+    display: inline-block;
+    font-weight: bold;
+    width:33%;
+}
+.recentSearches{
+  color:#004477;
+  display:block;
+  padding:5px ;
+  padding-left:20px ;
+}
+.productSearchText {
+    width: 65%;
+    color:#244677;
+}
+.productSearchButton{
+    margin: 10px;}
+.userInfoUserName{
+ color:#244677;    text-align: right;    font-weight: bold;
+}
+.bodyBG .userInfoUserName{
+ color:#fff;
+}
+.bodyBG .avMainPart a{
+
+}
+.rfqForm a{color:#047;}
+.rfd{
+  background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 95px;
+    color: #214173;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+    padding: 7px 3px;
+    position: absolute;
+    right: 15px;
+	}
+.rfd  .counter{
+    background: none repeat scroll 0 0 red;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+	color:white;}
+.oneSearchResult .glyphicon.glyphicon-minus-sign {
+    color: red;
+}
+.iframe-rwd  {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe-rwd img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.altbar-profile{
+  height: 25px;}
+
+.altbar-contact{
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  background-size:cover;
+  background-image:url("../img/altbar/contact.png")}
+
+
+.altbar-messages{
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  background-size:cover;
+  background-image:url("../img/altbar/messages.png")}
+.altbar-search{
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size:cover;
+  background-image:url("../img/altbar/search.png")}
+
+
+
+
+.avAdresSatiri{
+  bottom: 0;
+    padding-bottom: 20%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+	left:0px;
+}
+
+.avAdresSatiriLogin{
+  bottom: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+	left:0px;
+}
+
+.avAdresSatiri2{
+      bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pageContactForm{
+  text-align:right;
+}
+.pageContact .pageContactTextarea{
+  display: block;
+    max-width: 600px;
+    width: 100%;
+    height:100px;
+    color:#047;
+}
+.pageContact .pageContactSend{
+  color:#333;
+
+}
+
+.rfqForm .rfqFormInput{
+    max-width: 600px;
+    width: 100%;
+  display: block;
+}
+.rfqForm .rfqFormTextarea{
+  display: block;
+    max-width: 600px;
+    width: 100%;
+    height:100px;
+    color:#047;
+}
+
+.altImage{
+      bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.fixed .projectTopBar,
+.fixed .altImage{position:absolute}
+.selectedParts .oneRFQPart{
+    text-align: left;
+  padding:0px;
+}
+.oneRFQPart label {
+    padding-right: 10px;
+}
+.sprite{
+      border: 0px solid #0000FF;
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 25px;
+}
+.sprite span{width:25px;height:148px;background-size:cover; background-image:url('../img/register-sprite.png');    margin-left: -2px;display:block;}
+.sprite span.email	{margin-top:2px}
+.sprite span.username{margin-top:-30px}
+.sprite span.password{margin-top:-61px}
+.sprite span.phone	{margin-top:-91px}
+.sprite span.company	{margin-top:-125px;}
+.projectForm{
+      background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #EEEEEE;
+    border-radius: 2px;
+}
+.projectForm  .line{
+	box-shadow: 0 1px #CCCCCC;
+    padding: 10px;
+}
+
+.projectForm  .line:last-child{
+	box-shadow: 0 0px #CCCCCC;
+}
+.projectForm .line input {
+    border: 0 solid;
+	color: #047;    width: 80%;
+}
+
+.oneMessage{    border: 1px solid;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;}
+.oneMessage strong {
+    float: left;
+}
+.oneMessage.open {}
+.oneMessage .line{}
+.oneMessage .ctime,
+.oneMessage .ctimeM{font-size:120%;text-align:right;}
+
+.oneMessage .messageHeader{
+    border-bottom: 1px solid;
+    text-align: center;
+}
+.oneMessage b{display:none}
+.oneMessage br{display:none}
+.oneMessage .body{display:none}
+
+.oneMessage.open  .line{display:block}
+.oneMessage.open  .ctime{}
+.oneMessage.open  b{display:block}
+.oneMessage.open  br{display:block}
+.oneMessage.open  .body{display:block}
+#TermsOfUse .modal-body {
+    color: #248;
+    max-height: 500px;
+    overflow: auto;
+    text-align: justify;
+}
+.bodyBG .modal,
+.modal{
+    color: #047;}

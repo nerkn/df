@@ -1,0 +1,36 @@
+<div class='pageProfile'>
+<form role="form" class='loginFormForm' onSubmit='App.registerSubmit(this);' >
+<h2 class='avLoginError'></h2>
+  <div class="projectForm">
+    <div class="line">
+	  <div class="sprite"><span class="username"></span></div>
+	  <input type="username" class="" id="username" name='username' placeholder="Enter username" required="required" />
+	</div>
+    <div class="line">
+	  <div class="sprite"><span class="email"></span></div>
+	  <input type="email" class="" id="email" name='email' placeholder="Enter email" required="required" />
+	</div>
+	<div class="line">
+	  <div class="sprite"><span class="password"></span></div>
+	  <input type="password" class="" id="password" name='password' placeholder="Password" required="required" />
+  </div>
+	<div class="line">
+	  <div class="sprite"><span class="phone"></span></div>
+	  <input type="tel" class="" id="phone" name='phone' placeholder="Phone" required="required"  />
+  </div>
+	<div class="line">
+	  <div class="sprite"><span class="company"></span></div>
+	  <input type="company" class="" id="company" name='company' placeholder="Company" required="required" />
+  </div>
+  </div>
+  <a href='#' onClick='App.forgetPassport(this.parentNode);$("#TermsOfUseLink").remove();return false' style='display: inline-block;
+    padding-top: 15px;'>forgot password?  </a>
+  <a href='#' onClick='App.registerSubmit(this.parentNode);return false' class='button btn  btn-default'  style="float: right; Margin:10px;">Register</a>
+  
+  
+</form>
+
+<div class='avAdresSatiriLogin'>
+<img src='img/copyrights_login.png' style='width: 80%;  max-width: 400px;' />
+</div>
+</div>

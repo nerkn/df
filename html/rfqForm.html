@@ -1,0 +1,40 @@
+<div class='rfqForm'>
+  <form class='col-xs-12' onSubmit='App.rfqFormSubmit(this);return false;'>
+  <h2 class='avLoginError'></h2>
+  <b>SELECTED PARTS</b>
+  <div class='selectedPartHeader col-xs-12'>
+	<div class='oneRFQPart col-xs-12'>
+	  <label> &nbsp; </label><div style='text-align:right;float:right;padding-right:4px; width: 50px;' >QTY</div>
+	</div></div>
+  <div class='selectedParts col-xs-12'></div>
+<div class='clearfix'></div>
+<!--
+  <b>SUBJECT</b><br />
+  <input name='subject' class='rfqFormInput'>
+
+  <b>COMMENTS</b><br />
+
+<textarea class='rfqFormTextarea'></textarea>
+-->
+<input type='hidden' name='id' id='id' value='' />
+<input type='hidden' name='email' id='email' value='' />
+<input type='hidden' name='username'  id='username' value='' />
+<input type='hidden' name='phone' id='phone' value='' />
+<input type='hidden' name='company' id='company' value='' />
+<input type='hidden' name='ctime' id='ctime' value='' />
+<div style="text-align:right">
+  <button class="btn btn-default productSearchButton" onclick="App.rfqFormSubmit(this.form);return false;" type="button">Submit RFQ</button>
+</div>
+
+
+  </form>
+
+<br />
+<br />
+<div class='avAdresSatiri2'>
+During Avparts International business hours, 
+<br />mobile RFQs receive apiority response 
+<br />in <b>24 hours</b> or  call <a href='tel:+1 (305) 907-5600' class='tel'>+1 (305) 907-5600</a> 
+<br /> for immediate assistance.
+</div>
+</div>

@@ -1,0 +1,18 @@
+<form role="form" onSubmit='App.searchProducts(this);return false;'>
+  <div  class='productSearch' >
+  <div class='productSearchPartNumber'>PART NUMBER</div>
+  <input  class="productSearchText" id="search" placeholder="Search by Part Number " required />
+  </div>
+  <div style='text-align:right;margin-bottom:15px;'>
+  
+  <div style='float: left; text-align: left;'>
+	<div><span class='TRStock '></span>		 Available</div>
+	<div><span class='TRStock will'></span>	 In Process</div>
+	<div><span class='TRStock stockOut'></span> Not Available</div>
+  </div>
+  <button type="button"   onClick='App.searchProducts(this.parentNode.parentNode);' class="btn btn-default productSearchButton">Search</button>
+  </div>
+</form>
+<div class='searchResults'>
+
+</div>
