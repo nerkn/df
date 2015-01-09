@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.avpartsinternational" version="1.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Avparts International</name>
-    <description>Av Parts International LLC Parts Search Quote App</description>
-    <author email="ilker@pubblicatasarim.com" href="http://pubblicatasarim.com">
-        Pubblica Tasarim
+    <name>DeFacto Kurumsal</name>
+    <description>DeFacto Kurumsal</description>
+    <author email="erkintek@gmail.com" href="http://DeFactoKurumsal.com">
+        DeFacto Kurumsal Sitesi Editörleri
     </author>
 	
 
@@ -46,6 +46,9 @@
 	<access origin="http://127.0.0.1/*" />
 	<access origin="http://avparts.mornehir.com/*" />
 	<access origin="http://avparts.pubblicatasarim.com/*" />
+	<access origin="http://kurumsal.defactokariyer.com/*" />
+	<access origin="http://*.defactokariyer.com/*" />
+	
 	<access origin="https://*.google.com/*" />
 	<access origin="*.google.com" />
     <access origin="*.googleapis.com" />
